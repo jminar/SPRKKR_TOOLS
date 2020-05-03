@@ -1,0 +1,12 @@
+Compilation:
+Fortran 90 compiler
+
+Interactive visualization: 
+JMol, http://jmol.sourceforge.net/
+XCrysDen, http://www.xcrysden.org/
+
+Usage:
+Converged SCF-DFT *.pot file for the ground state
+Heisenberg exchange parameters (in spin-polarized scalar-relativistic
+mode) *.dat file
+
