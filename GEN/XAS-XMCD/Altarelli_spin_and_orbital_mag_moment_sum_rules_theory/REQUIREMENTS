@@ -1,0 +1,6 @@
+Compilation:
+Fortran 77 compiler
+
+Usage:
+Calculated *.rat spectra file for the atomic type of interest
+Energy cutoff estimate, i.e. from the IDOS of the atomic type of interest.
