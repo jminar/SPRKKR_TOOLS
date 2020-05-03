@@ -1,0 +1,9 @@
+This scripts requite following python3 packages:
+
+numpy
+OrderedDict
+ase
+copy
+argparse
+
+
