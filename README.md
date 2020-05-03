@@ -6,6 +6,12 @@ The aim of this reprository is to collect usefull script, tools and source code
 Please feel free to submitt pull request or send me (Jan Minar) your contribution but please follow following rules:
 
 -- Place your tool into given directory (kkrscf, kkrgen, kkrspec, kkrchi, auxilary) depending on the functionality of your script
+   --AUX
+   --CHI: scripts connected with linear responce calculations
+   --GEN: scripts connected with all kkrgen tasks (e.g. JXC, DOS etc..)
+   --SCF: scripts connected with self consistency
+   --SPEC: scripts for kkrspec ARPES, AIPES, SPLEED etc.
+   --VIS: Visualisation tools
 -- Please create directory (with clear unique name) which with following mandatory content:
    -- README: detailed description of of your scrip 
    -- REQUIREMENTS: detailed list of dependencies: libraries, compilers etc.
