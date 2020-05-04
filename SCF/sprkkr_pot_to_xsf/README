@@ -1,0 +1,26 @@
+Initial sharing of script to extract the unit cell + magnetic
+ground state details from CONVERGED, NO IT-symmetry nor CPA
+SUBSTITUTIONS (i.e. it must be NQ=NT) SPRKKR *.pot files
+into XCrysDen *.xsf format.
+
+
+Usage:
+
+./sprkkr_pot_to_xsf.sh FILENAME.pot > FILENAME.xsf
+
+visualize via:
+
+xcrysden --xsf FILENAME.xsf
+
+Show reference system via 'y' key, atomic labels via 's' key,
+and spin mag.moment via 'f' key
+
+(notice: click and dragt to move the figure, or hide/re-show 
+some features, in case the window would not refresh)
+
+Also compatible with VESTA etc.
+
+A.Marmodoro, FZU-Praha, May 2020.
+
+<further details to be written>
+
