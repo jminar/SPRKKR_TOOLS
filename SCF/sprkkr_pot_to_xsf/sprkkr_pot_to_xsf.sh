@@ -11,6 +11,8 @@
 #              Muenchen, LMU, 2017;
 #              Praha, FZU, 2020.
 
+mag_mom_scalefactor=200  # 400
+
 alat=$(grep ALAT $1 | tr -s " " | cut -d " " -f 2 | awk '{ print $1 * 0.52917}')
 
 echo CRYSTAL
@@ -46,10 +48,11 @@ flag  {IT_index=IT_index+1 ; if (IT_index <= nsubs) {print " ",$3," "}}         
 
 # Spin mag.moment value taken from the bottom of potential file (at convergence!):
 #
-# Magnitude rescaled by 400 only for convenience of graphical depiction in XCrysDen (press 'f' key for 'forces'; move the figure to refresh it)
+# Magnitude rescaled by $mag_mom_scalefactor only for convenience of graphical depiction in XCrysDen (press 'f' key for 'forces'; move the figure to refresh it)
 #
 rm -f .tmp_mag_moments
-grep "MOMENTS        QEL  NOS  SMT  OMT  HFF" -A9999  $1 | grep -v MOMENTS | grep -v === | grep -v TYPE | awk '{printf " %8.5f\n", $3 / 400}' >> .tmp_mag_moments
+grep "MOMENTS        QEL  NOS  SMT  OMT  HFF" -A9999  $1 | grep -v MOMENTS | grep -v === | grep -v TYPE | \
+ awk -v mag_mom_scalefactor=$mag_mom_scalefactor '{ printf " %8.5f\n", $3 / mag_mom_scalefactor }' >> .tmp_mag_moments
 
 # Rotated magnetization direction:
 awk '

@@ -6,7 +6,7 @@ into XCrysDen *.xsf format.
 
 Usage:
 
-./sprkkr_pot_to_xsf FILENAME.pot > FILENAME.xsf
+./sprkkr_pot_to_xsf.sh FILENAME.pot > FILENAME.xsf
 
 visualize via:
 
