@@ -1,3 +1,5 @@
+Author: Ondrej Sipr
+
 General usage:
 --------------
   moments-stdout.sc   <KKR-stdout-file>

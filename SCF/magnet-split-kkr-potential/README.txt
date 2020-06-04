@@ -1,3 +1,5 @@
+Author: Ondrej Sipr 
+
 Purpose:
 --------
 
