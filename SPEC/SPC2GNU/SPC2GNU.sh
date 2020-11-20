@@ -34,7 +34,7 @@ elif [ $ne -gt 1 ] && [ $nt -eq 1 ] && [ $np -eq 1 ]
 else
  echo 'FORMAT NOT RECOGNISED !!!!' 
  echo 'ONLY HEADER WILL BE REMOVED!!!'
- sed '1,/#######################/d' $1 > $2
+ sed '1,/#Decription/d' $1 > $2
 fi
  
 
